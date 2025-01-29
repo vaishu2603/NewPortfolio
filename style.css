@@ -1,0 +1,2839 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Rubik", serif;
+}
+.container
+{
+    width: 100%;
+    min-height: 100px;
+   /* border: 1px solid #000;*/
+}
+.container .marquee
+{
+    width: 100%;
+    height: 35px;
+    background-color: #023B6D;
+   border: 2px solid white;
+   border-left: none;
+   border-right: none;
+}
+.marquee  h4
+{
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.marquee  i
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container .header
+{
+    width: 100%;
+    min-height: 100px;
+    /*border: 1px solid #000;*/
+    display: flex;
+    flex-direction: row;
+}
+.header .information
+{
+    width: 24%;
+    height: 500px;
+    /*border: 1px solid #000;*/
+    overflow: auto;
+    background-color: #040B14;
+    display: flex;
+    flex-direction: column;
+}
+.information .inphoto
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 5px solid #474754;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.inphoto img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    filter: brightness(100%);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.inphoto img:hover
+{
+    filter: brightness(100%);
+    scale: 0.97;
+}
+.information .name
+{
+    width: 100%;
+    height: 40px;
+    /*border: 1px solid white;*/
+}
+.name h3
+{
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: 600;
+}
+.information .socialicon
+{
+    width: 90%;
+    margin-left: 10%;
+    height: 55px;
+    margin-top: 10px;
+    /*border: 1px solid white;*/
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    margin-bottom: 30px;
+}
+.socialicon .sbox
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color:#1E242C;
+    filter:contrast(80%);
+    transition: all 0.2s ease-in-out;
+}
+.socialicon .sbox:hover
+{
+   background-color: blue;
+}
+.sbox a
+{
+    text-decoration: none;
+    color: white;
+    margin-left: 12px;
+    line-height: 40px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.sbox  a i
+{
+    font-weight: 300;
+}
+
+.information .menu
+{
+    width: 85%;
+    min-height: 100px;
+    transition: all 03.s ease-in-out;
+    margin-left: 35px;
+}
+.menu a
+{
+    display: block;
+    margin-bottom: 36px;
+    text-decoration: none;
+    color: gray;
+    font-size: 19px;
+      font-weight: 400;
+}
+.menu i
+{
+    margin-right:15px;
+    font-size: 17px;
+}
+#a1
+{
+    color: white;
+}
+#a1 i
+{
+    color: blue;
+}
+.menu a:hover
+{
+    color: white;
+}
+.menu a:hover i
+{
+    color: blue;
+}
+.header .photo
+{
+    width: 78%;
+    min-height: 100px;
+    /*border: 1px solid #000;*/
+    /*background-image: url('./ImgP1folder/background2.avif');
+    background-size: 100% 100%;*/
+    display: flex;
+    flex-direction: row;
+}
+.photo .infoname
+{   
+    width: 60%;
+    height: 55%;
+   /* border: 1px solid #000;*/
+    margin-top: 130px;
+    margin-left: 30px;
+    position: relative;
+    display: block;
+    border-radius: 10px;
+background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        /* Ensures all lines appear one after another */
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+}
+.infoname:hover
+{
+    background: linear-gradient(to right, #f44336, #d9a7c7); /* Hover effect with a new gradient */
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px 0px, rgba(255, 255, 255, 0.8) -4px -4px 12px 0px; 
+}
+.infoname:hover h2
+{
+    color: white;
+}
+.infoname .typing-effect {
+ 
+    font-size: 20px;
+    overflow: hidden; 
+    white-space: nowrap; /* Ensures the text stays in one line */
+    border-right: 0px solid #333; /* Creates the cursor effect */
+    width: 0; /* Start with no text visible */
+    animation: typing 6s steps(30) infinite, blink-caret 0.75s step-end infinite;
+    
+  }
+  .photo .photoimg
+  {
+    width: 41%;
+    height: 100%;
+    /*border: 1px solid #000;*/
+  }
+  .photoimg .imgp
+  {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    margin-top: 100px;
+    margin-left: 70px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .imgp img
+  {
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+  }
+  .imgp img:hover
+  {
+    border: 3px solid gray;
+    scale: 0.99;
+    filter: grayscale(50%);
+  }
+  /* Typing animation */
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 65%;
+    }
+  }
+  
+  /* Blinking cursor effect */
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent; /* Hides the cursor at half time */
+    }
+  }
+  
+  .infoname {
+    line-height: 1.5;  /* Adjust line height for better spacing */
+  }
+  
+  
+  .infoname .info
+  {
+        position: absolute; /* Keep this element positioned absolutely */
+        top: 100;
+        left: 0;
+        width: 100%; /* Keep the width fixed */
+    }
+  
+ .infoname .info  .typing-effect1 {
+    font-size: 20px;
+    overflow: hidden; /* Hide overflow for the typing effect */
+    white-space: nowrap; /* Ensure the text stays in one line */
+    border-right: 0px solid #333; /* Create a typing cursor effect */
+    width: 0; /* Initially, no text is visible */
+    display: block; /* Ensure each line stays on its own */
+    opacity: 0; /* Start with invisible text */
+    animation: typing1 6s steps(60) 1s forwards, blink-caret 0.75s step-end infinite;
+    margin-bottom: 2px;
+    font-size: 15px;
+    color: black;
+  }
+  .infoname h6
+  {
+    margin-left: 45%;
+    font-size: 13px;
+    margin-top: 10%;
+    font-weight: 400;
+  }
+  .typing-effect2
+  {
+    margin-left: 58%;
+    color: red;
+    font-weight: 500;
+  }
+  /* Typing animation */
+  @keyframes typing1 {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  /* Blinking cursor effect */
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Control animation delay for each line */
+  .info .typing-effect1:nth-child(1) {
+    animation-delay: 0s; /* First line starts immediately */
+  }
+  .info .typing-effect1:nth-child(2) {
+    animation-delay: 6s; /* Second line starts after 6s */
+  }
+  .info .typing-effect1:nth-child(3) {
+    animation-delay: 12s; /* Third line starts after 12s */
+  }
+  .info .typing-effect1:nth-child(4) {
+    animation-delay: 18s; /* Third line starts after 12s */
+  }
+  .infoname h2
+  {
+font-weight: 400;
+font-size: 15px;
+color: red;
+  }
+  .infoname h3
+  {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+  }
+  .infoname h4
+  {
+    font-weight: 400;
+    font-size: 15px;
+    color: darkgray;
+    margin-bottom: 10px;
+  }
+  
+  .info .typing-effect1 {
+    font-weight: 400;
+    color: gray;
+    line-height: 20px;
+    font-size: 10px; /* Set the font size to 12px for small text */
+}
+
+.container .about
+{
+    width: 100%;
+    min-height: 100px;
+    /*border: 1px solid #000;*/
+    margin-top: 10px;
+    background-color: whitesmoke;
+}
+.about h1
+{
+    text-align: center;
+    font-weight: 500;
+    width: 5%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid blue;
+    margin-bottom: 30px;
+}
+.about p
+{
+    width: 70%;
+    margin: auto;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+.about .aboutinfo
+{
+    width: 60%;
+    min-height: 100px;
+    /*border: 1px solid #000;*/
+   margin: auto;
+   background: #EB5757;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+margin-bottom: 10px;
+border-radius: 10px;
+}
+.aboutinfo h2
+{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+    width: 30%;
+    margin: auto;
+    color: white;
+}
+.aboutinfo p
+{
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 500;
+    color: white;
+}
+.aboutinfo h4
+{
+    margin-left: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+.aboutinfo .personal
+{
+    width: 90%;
+    /*border: 1px solid white;*/
+    min-height: 100px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+.personal h4
+{
+    width: 48%;
+    /*border: 1px solid #000;*/
+    height: 50px;
+    line-height: 50px;
+    font-weight: 400;
+}
+.personal h4 a
+{
+    text-decoration: none;
+    color: white;
+}
+.personal a
+{
+    font-size: 14px;
+}
+#thought
+{
+    margin-left: 60%;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.container .skill
+{
+  width: 100%;
+ border: 1px solid #f4fafd;
+  min-height: 50px;
+  background-color: #F4FAFD;
+}
+.skill h2
+{
+    font-weight: 500;
+    width: 7%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+.skill .skillheading
+{
+ width: 80%;
+ min-height: 100px;
+ /*border: 1px solid #000;*/
+ margin: auto;
+ margin-top: 20px;
+}
+.skillheading p
+{
+  text-align: justify;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+.skillheading .skills
+{
+  width: 90%;
+  height: 300px;
+  /*border: 1px solid red;*/
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+.skill .lang
+{
+  width: 49%;
+  height: 50px;
+ /* border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.lang h3
+{
+  font-weight: 500;
+  font-size: 15px;
+  width: 90%;
+}
+.lang h5
+{
+  width: 5%;
+  font-weight: 500;
+}
+.lang .per
+{
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+.per .percent
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #149DDD;
+  transition: 1s all ease-in;
+}
+
+.per .percent1
+{
+  width: 90%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 3s all ease-in;
+  background-color: #149DDD;
+  cursor: pointer;
+}
+.per .percent:hover
+{
+  background-color: blue;
+  width: 100%;
+}
+.per .percent1:hover
+{
+
+  background-color:blue ;
+}
+
+.skill .internship
+{
+  width: 100%;
+  min-height: 100px;
+ /* border: 1px solid #000;*/
+  margin-bottom: 20px;
+}
+.internship ol
+{
+  margin:auto;
+  width: 75%;
+}
+.internship ol li
+{
+  margin-bottom: 10px;
+}
+.skill .project
+{
+  width: 100%;
+  min-height: 100px;
+ /* border: 1px solid #000;*/
+}
+.project ol
+{
+  width: 75%;
+  margin: auto;
+}
+.project ol li
+{
+  font-size: 17px;
+  font-weight: 500;
+}
+.pro p
+{
+  text-align: justify;
+  margin-top: 10px;
+}
+.pro p a
+{
+  color: blue;
+  font-size: 13px;
+  text-decoration: none;
+}
+.project .pro
+{
+  margin-bottom: 30px;
+}
+.container .resume
+{
+  width: 100%;
+  min-height: 100px;
+ /* border: 1px solid #000;*/
+  background-color: #FFFFFF;
+}
+.resume h2
+{
+  font-weight: 500;
+    width: 7%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+.resume .res
+{
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.res .box
+{
+  width: 43%;
+  min-height: 100px;
+/* border: 1px solid #000;*/
+  margin-bottom:10% ;
+}
+.resume p
+{
+  width: 90%;
+  text-align: justify;
+  margin-left: 3%;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.res .b1
+{
+  margin-left: 5%;
+  width: 50%;
+  border-left: 2px solid blue;
+  padding-left: 20px;
+}
+.res h3
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.res .box h4
+{
+ font-size: 20px;
+ margin-left: 7%;
+ color: gray;
+ font-weight: 500;
+ margin-bottom: 10px;
+}
+.res .box p
+{
+  width: 95%;
+  text-align: justify;
+  margin-left: 7%;
+  color: #B6B6B4;
+}
+.res .box h5
+{
+  margin-left: 7%;
+  color: #B6B6B4;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.box i
+{
+  color: #000000;
+  margin-right: 10px;
+}
+.resume .file
+{
+  width: 30%;
+  /*border: 1px solid #000;*/
+  min-height: 40px;
+  margin: auto;
+  margin-top: 20px;
+}
+.file h4 {
+  text-align: center;
+  font-weight: 500;
+  animation: 5s box  infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes box {
+  0% {
+    color: black; /* Starting color */
+  }
+  50% {
+    color: red; /* Midway color */
+  }
+  100% {
+    color: greenyellow; /* Return to starting color */
+  }
+}
+.resume a button {
+  background-color: #023B6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 27%;
+  margin-top: 2%;
+  font-weight: 600;
+  transition: 2s all ease-in-out;
+  margin-bottom: 20px;
+}
+
+.resume a button:hover {
+  background-color:skyblue;
+  color: black;
+}
+.container .services
+{
+  width: 100%;
+  min-height: 100px;
+  /*border: 1px solid #000;*/
+}
+.services h2
+{
+  font-weight: 500;
+    width: 7%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+.services .subservice
+{
+  width: 80%;
+  min-height: 100px;
+ /* border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 10%;
+}
+.subservice .subbox
+{
+  width: 45%;
+  min-height: 100px;
+ /* border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+}
+.subbox .slogo
+{
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  background-color:#023B6D;
+  margin-top: 3%;
+
+}
+.subbox .slogo:hover
+{
+  background-color: white;
+  border: 2px solid #000;
+}
+.slogo img
+{
+  width: 80%;
+  height: 80%;
+  margin-left: 7%;
+  margin-top: 2%;
+}
+.subbox .sinfo
+{
+  width: 70%;
+  height: 100%;
+  /*border: 1px solid #000;*/
+}
+.sinfo h3
+{
+  margin-top: 7%;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.sinfo p
+{
+  width: 100%;
+  text-align: justify;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.sinfo  a button
+{
+  margin-left: 15%;
+  width: 70%;
+  height: 30px;
+  background-color:#023B6D;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.s2 .slogo img
+{
+  margin-top: 15%;
+}
+.container .contact
+{
+  width: 100%;
+  min-height: 100px;
+  /*border: 1px solid #000;*/
+  margin-bottom: 10px;
+}
+.contact h2
+{
+    font-weight: 500;
+    width: 7%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+.contact .conbox
+{
+  width: 90%;
+  min-height: 100px;
+  margin: auto;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+.conbox .num
+{
+  width: 30%;
+  min-height: 280px;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.num .numb
+{
+  width: 100%;
+  height: 70px;
+ /* border: 1px solid #000;*/
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+}
+.numb .icon
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 7%;
+  background-color: #EDF8FD;
+  transition: 1s all ease-in-out;
+}
+.numb .icon:hover
+{
+  background-color: #149DDD;
+}
+.icon i
+{
+  line-height: 50px;
+  font-size: 20px;
+  margin-left: 16px;
+  color: blue;
+}
+.num .feild
+{
+  width: 70%;
+  height: 100%;
+  /*border: 1px solid #000;*/
+}
+.feild h3
+{
+  font-weight: 500;
+  font-size: 18px;
+}
+.feild h4
+{
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.feild h4 a
+{
+  color: black;
+  text-decoration: none;
+}
+.conbox .formpage
+{
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 60%;
+  min-height: 100px;
+  /*border: 1px solid #000;*/
+}
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Flexbox layout for name and email fields */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Style for input fields */
+.form-row input {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for message area */
+.form-message {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+  resize: vertical;
+}
+
+/* Submit button style */
+.form-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color:blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.form-submit:hover {
+  background-color: blue;
+}
+.contact-form h3
+{
+  margin-bottom: 20px;
+}
+.container .footer
+{
+  width: 100%;
+  min-height: 50px;
+  /*border: 1px solid #000;*/
+  background-color: #FFFFFF;
+  margin-top: 5%;
+}
+.footer h5
+{
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.footer .top
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #149DDD;
+  margin-left: 96%;
+  cursor: pointer;
+  transform: translateY(-25%);
+}
+.top i
+{
+  color: white;
+  font-size: 21px;
+  line-height: 50px;
+  margin-left: 30%;
+}
+/*media qery*/
+
+@media only screen and (max-width:990px){
+  
+  .container
+  {
+    width: 130%;
+    margin: auto;
+    border: 3px solid red;
+  }
+  .socialicon 
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100px;
+    gap:10%;
+    margin-left: 10%;
+    /*border: 1px solid white;*/
+  }
+  .socialicon .sbox
+  {
+    width: 30%;
+    margin-left: 10px;
+  }
+  .menu
+  {
+    margin-top: 10px;
+  }
+  .photo .infoname h6
+  {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .photo .infoname
+  {
+    min-height: 100px;
+  
+  }
+  .infoname .typing-effect1
+  {
+    font-size: 19px;
+  }
+  .info .typing-effect2
+  {
+    margin-bottom: 10px;
+  }
+  .infoname h2
+  {
+    margin-top: 10px;
+  }
+  .menu a
+  {
+    margin-left: 5%;
+  }
+  .about h1
+  {
+    font-size: 28px;
+  }
+  .about p {
+      font-size: 10px;
+      width: 95%;
+      text-align: justify;
+      font-weight: 300;
+  }
+  .aboutinfo p
+  {
+    font-size: 11px;
+  }
+  .personal
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .personal h4
+  {
+    width: 80%;
+    margin: auto;
+    font-size: 19px;
+  }
+  .personal h4 a
+  {
+    font-size: 19px;
+  }
+  .about #thought
+  {
+    font-size: 11px;
+    margin-left: 55%;
+  }
+  .skill .lang
+{
+  width: 90%;
+  height: 50px;
+ /* border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.skill .internship
+{
+  width: 100%;
+  min-height: 100px;
+ /* border: 1px solid #000;*/
+  margin-bottom: 20px;
+  margin-top:240px;
+  /*border: 1px solid #000;*/
+}
+.lang h3
+{
+  font-size: 23px;
+}
+.file h4 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.file button
+{
+  margin-bottom: 10px;
+}
+.services h2
+{
+  font-size: 10px;
+}
+.subservice .subbox
+{
+  width: 100%;
+  min-height: 100px;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+.subbox .slogo
+{
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-color:#023B6D;
+  margin-top: 3%;
+  margin-left: 10%;
+
+}
+.container .resume p
+  {
+    font-size: 10px;
+  }
+  .container .project p
+  {
+    font-size: 14px;
+  }
+.subbox .slogo:hover
+{
+  background-color: white;
+  border: 2px solid #000;
+}
+.slogo img
+{
+  width: 80%;
+  height: 80%;
+  margin-left: 7%;
+  margin-top: 2%;
+}
+.subbox .sinfo
+{
+  width: 70%;
+  height: 100%;
+  
+}
+.sinfo h3
+{
+  margin-top: 7%;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.sinfo p
+{
+  width: 100%;
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.sinfo  a button
+{
+  margin-left: 15%;
+  width: 70%;
+  height: 30px;
+  background-color:#023B6D;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.s2 .slogo img
+{
+  margin-top: 15%;
+}
+.conbox
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.conbox .formpage
+{
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 70%;
+  margin: auto;
+  min-height: 100px;
+  margin-top: 20px;
+ /* border: 1px solid #000;*/
+}
+.contact-form h3
+{
+  margin-top: 10px;
+}
+.contact-form button
+{
+  margin-bottom: 10px;
+}
+.conbox .num
+{
+  width: 50%;
+  min-height: 280px;
+ /* border: 1px solid #000;*/
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  margin-bottom: 10px;
+  margin: auto;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.footer h5
+{
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 13px;
+}
+.footer .top
+{
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  background-color: #149DDD;
+  margin-left: 94%;
+  cursor: pointer;
+  transform: translateY(-25%);
+}
+.top i
+{
+  color: white;
+  font-size: 23px;
+  line-height: 70px;
+  margin-left: 33%;
+}
+}
+@media only screen and (max-width: 400px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .marquee {
+    width: 100%;
+    background-color: #023B6D;
+    height: 35px;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+  }
+
+  .marquee h4 {
+    color: white;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .header, .about, .skill, .resume, .contact {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .header .information {
+    width: 100%;
+    background-color: #040B14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inphoto {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: 5px solid #474754;
+  }
+
+  .inphoto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .inphoto img:hover {
+    transform: scale(0.97);
+  }
+
+  .information .name {
+    width: 100%;
+    height: 40px;
+  }
+
+  .name h3 {
+    text-align: center;
+    line-height: 40px;
+    color: white;
+  }
+
+  .socialicon {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .socialicon .sbox {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1E242C;
+    filter: contrast(80%);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .sbox a {
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  .sbox:hover {
+    background-color: blue;
+  }
+
+  .photo .photoimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photoimg .imgp {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .imgp img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .imgp img:hover {
+    transform: scale(0.97);
+    filter: grayscale(50%);
+  }
+
+  .about, .skill, .contact {
+    background: linear-gradient(to right, #fffcdc, #d9a7c7);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .about p, .skillheading p, .aboutinfo p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .aboutinfo h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  .contact .formpage {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-row input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .resume a button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #023B6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .resume a button:hover {
+    background-color: skyblue;
+    color: black;
+  }
+}
+@media (max-width:400px) {
+ 
+  .container
+  {
+    border: 1px solid white;
+  }
+  .container .marquee
+{
+    width: 120%;
+    height: 35px;
+    background-color: #023B6D;
+   border: 2px solid white;
+   border-left: none;
+   border-right: none;
+}
+.marquee  h4
+{
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.marquee  i
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container .header
+{
+    width: 100%;
+    min-height: 100px;
+    /*border: 1px solid #000;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.header .information
+{
+    width: 100%;
+    height: 500px;
+    /*border: 1px solid #000;*/
+    overflow: auto;
+    background-color: #040B14;
+    transform: translateX(10%);
+    display: flex;
+    flex-direction: column;
+}
+.information .inphoto
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 5px solid #474754;
+    margin-top: 20px;
+    margin-left: 120px;
+
+    margin-bottom: 10px;
+}
+.inphoto img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    filter: brightness(100%);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.inphoto img:hover
+{
+    filter: brightness(100%);
+    scale: 0.97;
+}
+.information .name
+{
+    width: 100%;
+    height: 40px;
+    /*border: 1px solid white;*/
+}
+.name h3
+{
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: 600;
+}
+.information .socialicon
+{
+    width: 90%;
+    margin-left: 3%;
+    height: 55px;
+    margin-top: 10px;
+    /*border: 1px solid white;*/
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.socialicon .sbox
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color:#1E242C;
+    filter:contrast(80%);
+    transition: all 0.2s ease-in-out;
+}
+.socialicon .sbox:hover
+{
+   background-color: blue;
+}
+.sbox a
+{
+    text-decoration: none;
+    color: white;
+    margin-left: 12px;
+    line-height: 40px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.sbox  a i
+{
+    font-weight: 300;
+}
+
+.information .menu
+{
+    width: 85%;
+    min-height: 100px;
+    transition: all 03.s ease-in-out;
+    margin-left: 45%;
+}
+.menu a
+{
+    display: block;
+    margin-bottom: 36px;
+    text-decoration: none;
+    color: gray;
+    font-size: 19px;
+      font-weight: 400;
+}
+.menu i
+{
+    margin-right:15px;
+    font-size: 17px;
+}
+#a1
+{
+    color: white;
+}
+#a1 i
+{
+    color: blue;
+}
+.menu a:hover
+{
+    color: white;
+}
+.menu a:hover i
+{
+    color: blue;
+}
+.header .photo
+{
+    width: 100%;
+    min-height: 100px;
+   /* border: 1px solid #000;*/
+    /*background-image: url('./ImgP1folder/background2.avif');
+    background-size: 100% 100%;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translateX(10%);
+    margin-top: 30px;
+}
+.photo .infoname
+{   
+    width: 110%;
+    min-height: 90%;
+   /* border: 1px solid #000;*/
+   margin-top: -1px;
+   transform: translateY(3%);
+   transform: translateX(-3%);
+    position: relative;
+    display: block;
+    border-radius: 10px;
+background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        /* Ensures all lines appear one after another */
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+}
+.infoname:hover
+{
+    background: linear-gradient(to right, #f44336, #d9a7c7); /* Hover effect with a new gradient */
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px 0px, rgba(255, 255, 255, 0.8) -4px -4px 12px 0px; 
+}
+.infoname:hover h2
+{
+    color: white;
+}
+.infoname .typing-effect {
+ 
+    font-size: 20px;
+    overflow: hidden; 
+    white-space: nowrap; /* Ensures the text stays in one line */
+    border-right: 0px solid #333; /* Creates the cursor effect */
+    width: 0; /* Start with no text visible */
+    animation: typing 6s steps(30) infinite, blink-caret 0.75s step-end infinite;
+    
+  }
+  .photo .photoimg
+  {
+    
+    visibility: hidden;
+    /*border: 1px solid #000;*/
+  }
+  .photoimg .imgp
+  {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    margin-top: 100px;
+    margin-left: 70px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .imgp img
+  {
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+  }
+  .imgp img:hover
+  {
+    border: 3px solid gray;
+    scale: 0.99;
+    filter: grayscale(50%);
+  }
+  /* Typing animation */
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 65%;
+    }
+  }
+  
+  /* Blinking cursor effect */
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent; /* Hides the cursor at half time */
+    }
+  }
+  
+  .infoname {
+    line-height: 1.5;  /* Adjust line height for better spacing */
+  }
+  
+  
+  .infoname .info
+  {
+        position: absolute; /* Keep this element positioned absolutely */
+        top: 100;
+        left: 0;
+        width: 100%; /* Keep the width fixed */
+    }
+  
+ .infoname .info  .typing-effect1 {
+    font-size: 20px;
+    overflow: hidden; /* Hide overflow for the typing effect */
+    white-space: nowrap; /* Ensure the text stays in one line */
+    border-right: 0px solid #333; /* Create a typing cursor effect */
+    width: 0; /* Initially, no text is visible */
+    display: block; /* Ensure each line stays on its own */
+    opacity: 0; /* Start with invisible text */
+    animation: typing1 6s steps(60) 1s forwards, blink-caret 0.75s step-end infinite;
+    margin-bottom: 2px;
+    font-size: 11px;
+    color: black;
+  }
+  .infoname h6
+  {
+    margin-left: 10%;
+    font-size: 10px;
+    margin-top: 30%;
+    font-weight: 400;
+    transform: translateY(40%);
+  }
+  .typing-effect2
+  {
+    margin-left: 50%;
+    color: red;
+    margin-top: 10%;
+    font-weight: 500;
+  }
+  /* Typing animation */
+  @keyframes typing1 {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  /* Blinking cursor effect */
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Control animation delay for each line */
+  .info .typing-effect1:nth-child(1) {
+    animation-delay: 0s; /* First line starts immediately */
+  }
+  .info .typing-effect1:nth-child(2) {
+    animation-delay: 6s; /* Second line starts after 6s */
+  }
+  .info .typing-effect1:nth-child(3) {
+    animation-delay: 12s; /* Third line starts after 12s */
+  }
+  .info .typing-effect1:nth-child(4) {
+    animation-delay: 18s; /* Third line starts after 12s */
+  }
+  .infoname h2
+  {
+font-weight: 400;
+font-size: 15px;
+color: red;
+  }
+  .infoname h3
+  {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+  }
+  .infoname h4
+  {
+    font-weight: 400;
+    font-size: 15px;
+    color: darkgray;
+    margin-bottom: 10px;
+  }
+  
+  .info .typing-effect1 {
+    font-weight: 400;
+    color: gray;
+    line-height: 20px;
+    font-size: 10px; /* Set the font size to 12px for small text */
+}
+
+.container .about
+{
+    width: 100%;
+    min-height: 100px;
+    /*border: 1px solid #000;*/
+    margin-top: 10px;
+    transform: translateX(10%);
+    background-color: whitesmoke;
+}
+.about h1
+{
+    float: left;
+    font-weight: 500;
+    width: 5%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid blue;
+    margin-bottom: 30px;
+}
+.about p
+{
+    width: 80%;
+    transform: translateY(30%);
+    margin: auto;
+   text-align: justify;
+   font-size: 15px;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+.about .aboutinfo
+{
+    width: 100%;
+    min-height: 100px;
+    /*border: 1px solid #000;*/
+   margin: auto;
+   background: #EB5757;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+margin-bottom: 10px;
+transform: translateY(10%);
+border-radius: 10px;
+}
+.aboutinfo h2
+{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid yellow;
+    width: 70%;
+    font-size: 13px;
+  padding-top: 5PX;
+    margin: auto;
+    color: white;
+}
+.aboutinfo p
+{
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+}
+.aboutinfo h4
+{
+    margin-left: 10px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.aboutinfo .personal
+{
+    width: 90%;
+    /*border: 1px solid white;*/
+    min-height: 100px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+.personal h4
+{
+    width: 100%;
+    /*border: 1px solid #000;*/
+    height: 50px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.personal h4 a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.personal a
+{
+    font-size: 10px;
+}
+#thought
+{
+    margin-left: 60%;
+    margin-top: 10px;
+    font-weight: 300;
+    visibility: hidden;
+}
+
+.container .skill
+{
+  width: 100%;
+ border: 1px solid #f4fafd;
+  min-height: 50px;
+  transform: translateX(10%);
+  background-color: #F4FAFD;
+}
+.skill h2
+{
+    font-weight: 500;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+.skill .skillheading
+{
+ width: 100%;
+ min-height: 100px;
+ /*border: 1px solid #000;*/
+ margin: auto;
+ margin-top: 20px;
+}
+.skillheading p
+{
+  text-align: justify;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+.skillheading .skills
+{
+  width: 90%;
+  height: 300px;
+  /*border: 1px solid red;*/
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+.skill .lang
+{
+  width: 100%;
+  height: 50px;
+ /* border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.lang h3
+{
+  font-weight: 500;
+  font-size: 15px;
+  width: 90%;
+}
+.lang h5
+{
+  width: 5%;
+  font-weight: 500;
+}
+.lang .per
+{
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+.per .percent
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #149DDD;
+  transition: 1s all ease-in;
+}
+
+.per .percent1
+{
+  width: 90%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 3s all ease-in;
+  background-color: #149DDD;
+  cursor: pointer;
+}
+.per .percent:hover
+{
+  background-color: blue;
+  width: 100%;
+}
+.per .percent1:hover
+{
+
+  background-color:blue ;
+}
+
+.skill .internship
+{
+  width: 100%;
+  min-height: 100px;
+ /* border: 1px solid #000;*/
+  margin-bottom: 20px;
+}
+.internship ol
+{
+  margin:auto;
+  width: 80%;
+}
+.internship ol li
+{
+  margin-bottom: 10px;
+}
+.skill .project
+{
+  width: 100%;
+  min-height: 100px;
+ /* border: 1px solid #000;*/
+}
+.project ol
+{
+  width: 75%;
+  margin: auto;
+}
+.project ol li
+{
+  font-size: 17px;
+  font-weight: 500;
+}
+.pro p
+{
+  text-align: justify;
+  margin-top: 10px;
+}
+.pro p a
+{
+  color: blue;
+  font-size: 13px;
+  text-decoration: none;
+}
+.project .pro
+{
+  margin-bottom: 30px;
+}
+.container .resume
+{
+  width: 100%;
+  min-height: 100px;
+  /*border: 1px solid #000;*/
+  transform: translateX(10%);
+  background-color: #FFFFFF;
+}
+.resume h2
+{
+  font-weight: 500;
+    width: 7%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+.resume .res
+{
+  width: 80%;
+  margin: auto;
+  height: 1200px;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.res .box
+{
+  width: 100%;
+  min-height: 100px;
+/* border: 1px solid #000;*/
+  margin-bottom:10% ;
+  border: none;
+}
+.resume p
+{
+  width: 90%;
+  text-align: justify;
+  margin-left: 3%;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.res .b1
+{
+  margin-left: 5%;
+  transform: translateX(-10%);
+  width: 100%;
+  /*border-left: 2px solid blue;*/
+  border: none;
+
+}
+.res h3
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: red;
+}
+.res .box h4
+{
+ font-size: 10px;
+ margin-left: 7%;
+ color: gray;
+ font-weight: 500;
+ width: 100%;
+
+ margin-bottom: 10px;
+}
+.res .box p
+{
+  width: 94%;
+  text-align: justify;
+  margin-left: 7%;
+  font-size: 15px;
+  color: #B6B6B4;
+}
+.res .box h5
+{
+  margin-left: 7%;
+  color: #B6B6B4;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.box i
+{
+  color: #000000;
+  margin-right: 10px;
+}
+.resume .file
+{
+  width: 50%;
+  /*border: 1px solid #000;*/
+  min-height: 40px;
+  margin: auto;
+  margin-top: 20px;
+}
+.file h4 {
+  text-align: center;
+  font-weight: 500;
+  animation: 5s box  infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes box {
+  0% {
+    color: black; /* Starting color */
+  }
+  50% {
+    color: red; /* Midway color */
+  }
+  100% {
+    color: greenyellow; /* Return to starting color */
+  }
+}
+.resume a button {
+  background-color: #023B6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 20%;
+  transform: translateX(-22%);
+  margin-top: 2%;
+  font-weight: 600;
+  transition: 2s all ease-in-out;
+  margin-bottom: 20px;
+}
+
+.resume a button:hover {
+  background-color:skyblue;
+  color: black;
+}
+.container .services
+{
+  width: 100%;
+  min-height: 100px;
+  /*border: 1px solid #000;*/
+  transform: translateX(10%);
+}
+.services h2
+{
+  font-weight: 500;
+    width: 10%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+    font-size: 20px;
+}
+.services .subservice
+{
+  width: 80%;
+  min-height: 100px;
+ /* border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 10%;
+}
+.subservice .subbox
+{
+  width: 100%;
+  min-height: 100px;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+
+  gap: 10%;
+}
+.subbox .slogo
+{
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  background-color:#023B6D;
+  margin-top: 20%;
+
+}
+.subbox .slogo:hover
+{
+  background-color: white;
+  border: 2px solid #000;
+}
+.slogo img
+{
+  width: 80%;
+  height: 80%;
+  margin-left: 7%;
+  margin-top: 2%;
+}
+.subbox .sinfo
+{
+  width: 80%;
+  height: 100%;
+  /*border: 1px solid #000;*/
+}
+.sinfo h3
+{
+  margin-top: 7%;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.sinfo p
+{
+  width: 100%;
+  text-align: justify;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.sinfo  a button
+{
+  margin-left: 5%;
+  width: 90%;
+  height: 30px;
+  background-color:#023B6D;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.s2 .slogo img
+{
+  margin-top: 15%;
+}
+.container .contact
+{
+  width: 100%;
+  min-height: 100px;
+  /*border: 1px solid #000;*/
+  margin-bottom: 10px;
+  transform: translateX(10%);
+}
+.contact h2
+{
+    font-weight: 500;
+    width: 7%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+.contact .conbox
+{
+  width: 90%;
+  min-height: 100px;
+  margin: auto;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+.conbox .num
+{
+  width: 100%;
+  min-height: 280px;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.num .numb
+{
+  width: 100%;
+  height: 70px;
+ /* border: 1px solid #000;*/
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+}
+.numb .icon
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 7%;
+  background-color: #EDF8FD;
+  transition: 1s all ease-in-out;
+}
+.numb .icon:hover
+{
+  background-color: #149DDD;
+}
+.icon i
+{
+  line-height: 50px;
+  font-size: 20px;
+  margin-left: 16px;
+  color: blue;
+}
+.num .feild
+{
+  width: 70%;
+  height: 100%;
+  /*border: 1px solid #000;*/
+}
+.feild h3
+{
+  font-weight: 500;
+  font-size: 18px;
+}
+.feild h4
+{
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.feild h4 a
+{
+  color: black;
+  text-decoration: none;
+}
+.conbox .formpage
+{
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 100%;
+  margin-top: 20px;
+  min-height: 100px;
+  /*border: 1px solid #000;*/
+}
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Flexbox layout for name and email fields */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Style for input fields */
+.form-row input {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for message area */
+.form-message {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+  resize: vertical;
+}
+
+/* Submit button style */
+.form-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color:blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.form-submit:hover {
+  background-color: blue;
+}
+.contact-form h3
+{
+  margin-bottom: 20px;
+}
+.container .footer
+{
+  width: 100%;
+  min-height: 50px;
+  /*border: 1px solid #000;*/
+  background-color: #FFFFFF;
+  margin-top: 5%;
+  transform: translateX(10%);
+}
+.footer h5
+{
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.footer .top
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #149DDD;
+  margin-left: 96%;
+  cursor: pointer;
+  transform: translateY(-25%);
+}
+.top i
+{
+  color: white;
+  font-size: 21px;
+  line-height: 50px;
+  margin-left: 30%;
+}
+/*media qery*/
+
+}
+
+@media (max-width:768px)
+{
+ 
+ .container
+  {
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-sizing: content-box;
+    width: 100%;
+  }
+  .container .marquee
+  {
+    width: 112%;
+  }
+  .container .header
+  {
+    flex-wrap: wrap;
+  }
+  .header .information
+{
+    width: 35%;
+    height: 500px;
+    /*border: 1px solid #000;*/
+    overflow: auto;
+    background-color: #040B14;
+    display: flex;
+    flex-direction: column;
+}
+.information .inphoto
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 5px solid #474754;
+    margin-top: 20px;
+   margin-right: 10px;
+
+    margin-bottom: 10px;
+}
+.header .photo
+{
+    width: 65%;
+    min-height: 100px;
+   /*border: 1px solid #000;*/
+    /*background-image: url('./ImgP1folder/background2.avif');
+    background-size: 100% 100%;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translateX(10%);
+    margin-top: 30px;
+}
+
+.photo .photoimg
+  {
+   display: none;
+    /*border: 1px solid #000;*/
+  }
+  .photo .infoname
+{   
+    width: 110%;
+    min-height: 90%;
+   /* border: 1px solid #000;*/
+   margin-top: -1px;
+   transform: translateY(3%);
+   transform: translateX(-3%);
+    position: relative;
+    display: block;
+    border-radius: 10px;
+background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        /* Ensures all lines appear one after another */
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+}
+.container .about
+{
+  width: 100%;
+  transform: translateX(10%);
+}
+.about p
+{
+  font-size: 15px;
+  width: 100%;
+}
+.about p
+{
+    width: 80%;
+    transform: translateY(10%);
+    margin: auto;
+   text-align: justify;
+   font-size: 15px;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+.aboutinfo p
+{
+  width: 100%;
+}
+.aboutinfo h2
+{
+  width: 60%;
+  margin-bottom: 20px;
+}
+.personal h4 a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.personal h4
+{
+  font-size: 14px;
+}
+.container .skill
+{
+  width: 100%;
+ border: 1px solid #f4fafd;
+  min-height: 50px;
+  transform: translateX(10%);
+  background-color: #F4FAFD;
+}
+.skill h2
+{
+    font-weight: 500;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+.lang h3
+{
+  font-weight: 500;
+  font-size: 12px;
+  width: 90%;
+}
+.container .resume
+{
+  transform: translateX(10%);
+}
+.container .services
+{
+  transform: translateX(10%);
+}
+.services h2
+{
+  font-size: 15px;
+}
+.container .footer
+{
+  transform: translateX(10%);
+}
+}
+@media (max-width:851px){
+  .container
+  {
+    border: 1px solid white;
+    box-sizing: border-box;
+    box-sizing: content-box;
+    width: 100%;
+  }
+  .container .marquee
+  {
+    width: 112%;
+  }
+  .container .header
+  {
+    flex-wrap: wrap;
+  }
+  .header .information
+{
+    width: 35%;
+    height: 500px;
+    /*border: 1px solid #000;*/
+    overflow: auto;
+    background-color: #040B14;
+    display: flex;
+    flex-direction: column;
+}
+.information .inphoto
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 5px solid #474754;
+    margin-top: 20px;
+   margin-right: 10px;
+
+    margin-bottom: 10px;
+}
+.header .photo
+{
+    width: 65%;
+    min-height: 100px;
+   /*border: 1px solid #000;*/
+    /*background-image: url('./ImgP1folder/background2.avif');
+    background-size: 100% 100%;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translateX(10%);
+    margin-top: 30px;
+}
+.photo .photoimg
+  {
+   display: none;
+    /*border: 1px solid #000;*/
+  }
+  .photo .infoname
+{   
+    width: 110%;
+    min-height: 90%;
+   /* border: 1px solid #000;*/
+   margin-top: -1px;
+   transform: translateY(3%);
+   transform: translateX(-3%);
+    position: relative;
+    display: block;
+    border-radius: 10px;
+background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        /* Ensures all lines appear one after another */
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+}
+.container .about
+{
+  width: 100%;
+  transform: translateX(10%);
+}
+.about p
+{
+  font-size: 15px;
+  width: 100%;
+}
+.about p
+{
+    width: 80%;
+    transform: translateY(10%);
+    margin: auto;
+   text-align: justify;
+   font-size: 15px;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+.aboutinfo p
+{
+  width: 100%;
+}
+.aboutinfo h2
+{
+  width: 60%;
+  margin-bottom: 20px;
+}
+.personal h4 a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.personal h4
+{
+  font-size: 14px;
+}
+.container .skill
+{
+  width: 100%;
+ border: 1px solid #f4fafd;
+  min-height: 50px;
+  transform: translateX(10%);
+  background-color: #F4FAFD;
+}
+.skill h2
+{
+    font-weight: 500;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 30px;
+    margin-left: 3%;
+}
+.lang h3
+{
+  font-weight: 500;
+  font-size: 12px;
+  width: 90%;
+}
+.container .resume
+{
+  transform: translateX(10%);
+}
+.container .services
+{
+  transform: translateX(10%);
+}
+.services h2
+{
+  font-size: 15px;
+}
+.container .footer
+{
+  transform: translateX(10%);
+}
+}
+  
+
+
+
+
